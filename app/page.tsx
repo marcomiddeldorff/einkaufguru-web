@@ -1,65 +1,112 @@
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    return (
+        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+            <main
+                className="flex min-h-screen w-full max-w-3xl flex-col items-center py-16 px-16 bg-white dark:bg-black sm:items-start">
+                <Image
+                    src="/logo.png"
+                    alt="Next.js logo"
+                    width={250}
+                    height={20}
+                    priority
+                />
+                <div className="flex flex-1 flex-col items-center gap-6 sm:items-start sm:text-left">
+                    <h1 className="max-w-lg text-4xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+                        Delete Account - Einkaufguru
+                    </h1>
+                    <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+                        Users of the <strong>Einkaufguru</strong> app can request the deletion of their user account and
+                        associated
+                        personal data at any time.
+                    </p>
+
+                    <h2 className="text-2xl font-semibold mt-6">
+                        🔐 How to request the deletion of your account
+                    </h2>
+
+                    <p>
+                        To have your account deleted, please send an email to:
+                    </p>
+
+                    <p>
+                        📧 <a className="text-primary underline" href="mailto:einkaufguru@marco-middeldorff.de">einkaufguru@marco-middeldorff.de</a>
+                    </p>
+
+                    <p>
+                        Please use the email address registered with your Shopping Guru account.
+                    </p>
+
+                    <h2 className="text-2xl font-semibold mt-6">
+                        🗑️ What data will be deleted?
+                    </h2>
+
+                    <p>
+                        Upon receiving your request, the following data will be completely deleted:
+                    </p>
+
+                    <ul className="list-disc ml-6 leading-8">
+                        <li>
+                            User account (UID)
+                        </li>
+                        <li>
+                            Email address
+                        </li>
+                        <li>
+                            Profile information
+                        </li>
+                        <li>
+                            All shopping lists you have created
+                        </li>
+                        <li>
+                            All entries within these shopping lists
+                        </li>
+                        <li>
+                            Uploaded images
+                        </li>
+                        <li>
+                            Memberships in shopping lists
+                        </li>
+                        <li>
+                            Push tokens and associated device information
+                        </li>
+                    </ul>
+
+                    <h2 className="text-2xl font-semibold mt-6">
+                        ⏱️ Retention period
+                    </h2>
+
+                    <ul className="list-disc ml-6 leading-8">
+                        <li>
+                            Deletion usually takes place <strong>within 14 days</strong> of receiving your request.
+                        </li>
+                        <li>
+                            Your personal data will <strong>not be stored any longer</strong>, unless there are legal obligations to retain it.
+                        </li>
+                    </ul>
+
+                    <h2 className="text-2xl font-semibold mt-6">
+                        ⚠️ Important notice
+                    </h2>
+
+                    <p>
+                        Once your account has been deleted, <strong>it is not possible</strong> to restore the data.
+                    </p>
+
+                    <h2 className="text-2xl font-semibold mt-6">
+                        📩 Contact
+                    </h2>
+
+                    <p>
+                        If you have any questions about data deletion or data protection, you can contact us at:
+                    </p>
+
+                    <p>
+                        📧 <a className="text-primary underline" href="mailto:einkaufguru@marco-middeldorff.de">einkaufguru@marco-middeldorff.de</a>
+                    </p>
+                </div>
+            </main>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    );
 }
