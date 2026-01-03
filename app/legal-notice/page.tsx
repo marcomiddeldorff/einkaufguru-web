@@ -2,7 +2,11 @@ import ThemedView from "@/components/themed-view";
 import Title from "@/components/title";
 import Text from "@/components/text";
 import SubTitle from "@/components/sub-title";
+import {Metadata} from "next";
 
+export const metadata: Metadata = {
+    title: 'Legal Notice'
+}
 
 export default function LegalNotice() {
     return (

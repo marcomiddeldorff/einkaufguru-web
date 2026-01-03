@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import {ChevronRight} from "lucide-react";
+import {Metadata} from "next";
 
+export const metadata: Metadata = {
+    title: 'Datenschutz'
+}
 
 export default function DatenschutzPage() {
     return (

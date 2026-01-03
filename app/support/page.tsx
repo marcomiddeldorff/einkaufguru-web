@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Accordion from "@/components/accordion";
 import Title from "@/components/title";
+import {Metadata} from "next";
 
+export const metadata: Metadata = {
+    title: 'Support'
+}
 
 export default function Support() {
     return (
