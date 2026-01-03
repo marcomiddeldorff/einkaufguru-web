@@ -106,6 +106,15 @@ export default function Home() {
                         📧 <a className="text-primary underline" href="mailto:einkaufguru@marco-middeldorff.de">einkaufguru@marco-middeldorff.de</a>
                     </p>
                 </div>
+
+                <ul className="flex w-full items-center gap-4 mt-12">
+                    <li>
+                        <a href="/privacy-policy" className="text-primary underline">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/legal-notice" className="text-primary underline">Legal Notice</a>
+                    </li>
+                </ul>
             </main>
         </div>
     );
